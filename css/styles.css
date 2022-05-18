@@ -12,7 +12,7 @@ p {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary-white-color: #e5e5e5;
+  --primary-white-color: #ffffff;
 }
 body {
   background-color: var(--primary-white-color);
@@ -28,12 +28,12 @@ body {
   /* margin-left: auto;
     margin-right: auto; */
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 /* ul {
     list-style: none;
 } */
-/* Утиліти мають бути вгорі */
+/* common styles*/
 .list {
   padding: 0;
   margin: 0;
@@ -51,6 +51,18 @@ body {
   line-height: 1.17;
   text-align: center;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* logo */
 .logo-primary {
   color: #000000;
@@ -58,17 +70,20 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 2;
-  border: 1px solid #ececec;
 }
 .accent {
   color: #2196f3;
 }
 /* page header */
+.page-header {
+  border-bottom: 1px solid #ececec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .header {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
+
 /* site-nav */
 .site-nav {
   display: flex;
@@ -124,7 +139,9 @@ body {
   text-transform: uppercase;
 }
 .hero {
+  padding: 200px 200px 280px;
   background-color: #2f303a;
+  max-height: 600px;
   text-align: center;
 }
 /* button */
@@ -185,15 +202,18 @@ body {
 .work {
   display: flex;
 }
-.work .item {
+.work .item:not(:last-child) {
   margin-right: 30px;
 }
 /* team */
+.team {
+  background-color: #f5f4fa;
+}
 .team-list {
   display: flex;
-}
-.team-list .item {
   width: 270px;
+}
+.team-list .item:not(:last-child) {
   margin-right: 30px;
 }
 .team-list .title {
@@ -269,6 +289,8 @@ body {
   margin-bottom: 0;
 }
 .products .products-title {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
