@@ -58,6 +58,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1, 2;
+  border: 1px solid #ececec;
 }
 .accent {
   color: #2196f3;
@@ -149,6 +150,11 @@ body {
 .button {
   cursor: pointer;
 }
+.button:hover {
+  color: #ffffff;
+  background-color: #188ce8;
+}
+
 /* sections */
 .section {
   padding-top: 94px;
