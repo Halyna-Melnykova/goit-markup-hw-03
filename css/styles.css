@@ -278,6 +278,9 @@ body {
   background-color: #2196f3;
   color: #ffffff;
 }
+.filter {
+  border: 1px solid transparent;
+}
 /* .products */
 .products {
   display: flex;
