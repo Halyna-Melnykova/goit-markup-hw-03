@@ -335,6 +335,7 @@ body {
   background-color: #2f303a;
 }
 .logo-secondary {
+  display: block;
   margin-bottom: 20px;
 
   color: #ffffff;
