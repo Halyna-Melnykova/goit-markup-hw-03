@@ -28,7 +28,7 @@ body {
   /* margin-left: auto;
     margin-right: auto; */
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 /* ul {
     list-style: none;
@@ -65,6 +65,8 @@ body {
 }
 /* logo */
 .logo-primary {
+  margin-right: 93px;
+
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -87,7 +89,6 @@ body {
 /* site-nav */
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -126,9 +127,13 @@ body {
 .link:focus {
   color: var(--accent-color);
 }
+/* hero */
 .hero-title {
+  max-width: 696px;
   margin-top: 0;
+  margin-right: 200px;
   margin-bottom: 30px;
+  margin-left: 200px;
 
   color: #ffffff;
   font-weight: 900;
@@ -139,7 +144,8 @@ body {
   text-transform: uppercase;
 }
 .hero {
-  padding: 200px 200px 280px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: #2f303a;
   max-height: 600px;
   text-align: center;
@@ -177,9 +183,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.no-padding {
+.section .work {
   padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 94px;
 }
 /* specifics */
 .specifics-list {
@@ -311,6 +317,8 @@ body {
 }
 /* footer */
 .page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
 .logo-secondary {
